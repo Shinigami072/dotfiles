@@ -1,0 +1,14 @@
+Host bork
+HostName borg.kis.agh.edu.pl
+User staskrzy
+Port 22
+
+Host student
+HostName student.agh.edu.pl
+User krzysst
+Port 22
+
+Host lithium-pillow-of-death
+	Hostname lithium-pillow-of-death.xyz
+	User root
+	Port 22
