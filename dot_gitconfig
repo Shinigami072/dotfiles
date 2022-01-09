@@ -1,0 +1,17 @@
+[user]
+	name = Shinigami072
+	email = krzys.stasiowski@gmail.com
+	signingkey = 0x73e6b8702ed0cf5c275889c923c4efd229c1630c
+[core]
+	autocrlf = input
+[commit]
+	gpgsign = false
+[gpg]
+	program = /usr/bin/gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = master
