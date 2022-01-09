@@ -18,7 +18,8 @@ echo -e "${GREEN}Pre Setup${NC}"
 
 # Apt Packages
 echo -e "${YELLOW}APT packages${NC} ..."
-echo -e "${YELLOW} + pass ${NC} ..."
+sudo apt -y install vim
+
 sudo apt -y install pass pass-extension-otp pass-extension-audit
 sudo apt -y install gnupg2 gnupg-agent scdaemon pcscd
 echo -e "${GREEN}APT packages${NC} ..."
