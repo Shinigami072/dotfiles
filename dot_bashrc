@@ -3,6 +3,9 @@
 # for examples
 #ATOM TRASH FIX
 export ELECTRON_TRASH=gio trash 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye > /dev/null
 
 # If not running interactively, don't do anything
 case $- in
