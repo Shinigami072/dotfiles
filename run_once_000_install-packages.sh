@@ -20,7 +20,7 @@ echo -e "${GREEN}Pre Setup${NC}"
 echo -e "${YELLOW}APT packages${NC} ..."
 echo -e "${YELLOW} + pass ${NC} ..."
 sudo apt -y install pass pass-extension-otp pass-extension-audit
-sudo apt -y install gnupg2 gnupg-agent gnupg-curl scdaemon pcscd
+sudo apt -y install gnupg2 gnupg-agent scdaemon pcscd
 echo -e "${GREEN}APT packages${NC} ..."
 
 # Yubikey
