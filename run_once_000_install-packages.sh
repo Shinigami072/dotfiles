@@ -9,6 +9,9 @@ NC='\033[0m'
 
 # Pre Setup
 echo -e "${YELLOW}Pre Setup${NC} ..."
+wget -qO - https://pkg.pujol.io/debian/gpgkey | sudo apt-key add -
+echo 'deb [arch=amd64] https://pkg.pujol.io/debian/repo all main' | sudo tee /etc/apt/sources.list.d/pkg.pujol.io.list
+
 sudo apt update
 sudo apt -y upgrade
 echo -e "${GREEN}Pre Setup${NC}"
