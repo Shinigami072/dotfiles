@@ -1,3 +1,4 @@
 #!/bin/sh
 
-pass git clone git@github.com:Shinigami072/.password-store.git
+cd ~
+git clone git@github.com:Shinigami072/.password-store.git .password-store
